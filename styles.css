@@ -99,3 +99,39 @@ a {
     color: var(--primary-1);
     text-decoration: none;
 }
+
+@media screen and (min-width: 376px) {
+    body {
+        padding: 5rem 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./images/favicon-32x32.png);
+    }
+
+    .container {
+        display: flex;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .main {
+        max-width: var(--desktop);
+        background-image: url(./images/bg-intro-desktop.png);
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        width: 50%;
+        margin-right: 2rem;
+    }
+
+    .form-section {
+        flex-grow: 1;
+        width: 50%;
+    }
+
+}
